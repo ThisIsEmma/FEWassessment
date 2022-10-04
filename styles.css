@@ -1,67 +1,81 @@
 .container {
-    height: 600px;
-    width: 600px;
-    margin: auto;
+    margin: 850px;
     margin-top: 200px;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
     display:grid;
     font-family: Arial, Helvetica, sans-serif;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 0.25em;
+    grid-gap: 1em;
     grid-template-areas: "a b"
                          "c d";
-    box-sizing: border-box;
-
+                         
 }
 
 .a {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: a;
     border: solid 1px black ;
-    padding-top: 40px;
-    padding-left: 20px;
+    padding-left: 15px;
+    font-size: 15px;
     box-sizing: border-box;
-    font-size: 20px;
-}
-
-.b {
-    height: 250px;
-    width: 250px;
-    grid-area: b;
-    border: solid 1px black ;
-    padding-top: 15px;
-    padding-left: 20px;
-    box-sizing: border-box;
-    line-height: 2;
-}
-
-.c{
-    height: 250px;
-    width: 250px;
-    grid-area:c;
-    border: solid 1px black ;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-bottom: 5px;
-    box-sizing: border-box;
-    line-height: 0.5;
-    font-size: 20px;
-}
-
-.d{
-    height: 250px;
-    width: 250px;
-    grid-area:d;
-    border: solid 1px black ;
-    padding-top: 10px;
-    padding-left: 20px;
-    box-sizing: border-box;
-    font-size: 35px;
     line-height: 0;
 }
 
-.color-display{
+.b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    grid-area: b;
+    border: solid 1px black ;
+    line-height: 1.5;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    grid-area:c;
+    border: solid 1px black ;
+    padding-left: 15px;
+    line-height: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    grid-area:d;
+    border: solid 1px black ;
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 0;
+}
+
+#color-display{
     border: solid 1px black ;
     width:100px;
     height: 100px;
+}
+
+.b input {
+    border: 1px black ;
+    padding: 0.5em;
 }
